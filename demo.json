@@ -1,10 +1,16 @@
 [
     {
-        "title": "HTML",
-        "decs": "HTML is markup language"
+        "location": "chittagong, Bangladesh",
+        "price": 17,
+        "locationInfo": "it build in 1900",
+        "rating": 4.5,
+        "placeType:": "any",
+        "bedrooms": 5,
+        "beds": 8,
+        "bathrooms": 5,
+        "propertyType": "home",
+        "guestCapacity": 15,
+        "checkIn" "",
+        "checkOut": 
     },
-    {
-        "title": "CSS",
-        "decs": "CSS is cascading style sheet"
-    }
 ]

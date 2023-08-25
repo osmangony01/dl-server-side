@@ -3,7 +3,7 @@ const cors = require('cors');
 // const path = require('path');
 
 require('./config/db');
-const taskRouter = require("./routes/taskRouter");
+const taskRouter = require("./routes/routes");
 
 const app = express();
 
@@ -11,7 +11,8 @@ app.use(cors());
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
-app.use('/api/data', taskRouter);
+app.use(taskRouter);
+
 
 app.get('/', (req, res) => {
     res.send("Server is running ...")
