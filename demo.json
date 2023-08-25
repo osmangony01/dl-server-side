@@ -10,7 +10,20 @@
         "bathrooms": 5,
         "propertyType": "home",
         "guestCapacity": 15,
+        "imgSrc" : "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/lpibo-ew-1656015868.jpg"
         "checkIn" "",
-        "checkOut": 
+        "checkOut": ,
+
     },
 ]
+
+        "checkIn": "2023-08-01",
+        "checkOut": "2023-08-02",
+
+        "featureCategory": ""
+        "featureCategory": ""
+        "featureCategory": ""
+        "featureCategory": ""
+        "featureCategory": ""
+        "featureCategory": ""
+        
