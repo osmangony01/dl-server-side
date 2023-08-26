@@ -9,6 +9,7 @@ const getSpecificCategoryData =  async (req, res) => {
     try {
         //console.log(featureCategory);
         const categoryData = await ReserveData.find(featureCategory);
+        console.log(categoryData);
         res.status(200).send(categoryData);
     }
     catch (error) {
