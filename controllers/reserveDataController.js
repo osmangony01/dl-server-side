@@ -2,6 +2,7 @@
 
 const ReserveData = require('../models/reserveModels');
 
+
 const getAllReserveData = async (req, res) => {
     try {
         const data = await ReserveData.find();

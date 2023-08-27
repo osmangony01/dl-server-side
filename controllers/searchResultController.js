@@ -1,18 +1,15 @@
 
 const ReserveData = require('../models/reserveModels');
 
+
 const getAllSearchResultData = async (req, res) => {
+    
     const queryResult = req.query;
-    // const queryResult = {
-    //     location: 'chittagong, Bangladesh',
-    //     checkIn: '2023-08-10',
-    //     checkOut: '2023-08-15',
-    //     guestCapacity: '25'
-    // };
+   
     const checkInDate = new Date(queryResult.checkIn);
     const checkOutDate = new Date(queryResult.checkOut);
 
-    console.log(queryResult);
+    //console.log(queryResult);
     //const searchQuery = {};
 
     const searchQuery = {
@@ -36,14 +33,14 @@ const getAllSearchResultData = async (req, res) => {
         guestCapacity: { $gte: parseInt(queryResult.guestCapacity) }
     };
 
-    console.log(searchQuery)
+    //console.log(searchQuery)
     try {
         const data = await ReserveData.find(searchQuery);
-        console.log(data);
+        //console.log(data);
         res.status(200).send(data);
     }
     catch (error) {
-        console.error(error);
+        //console.error(error);
         res.status(500).send(error.message);
     }
 }

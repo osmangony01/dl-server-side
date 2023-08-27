@@ -1,13 +1,11 @@
 
 const route = require('express').Router();
-const { getAllTaskData, getAllCategory } = require('../controllers/categoryController');
+const { getAllCategory } = require('../controllers/categoryController');
 const { getAllFilteredData } = require('../controllers/filterController');
 const { getAllReserveData } = require('../controllers/reserveDataController');
 const { getAllSearchResultData } = require('../controllers/searchResultController');
 const { getSpecificCategoryData } = require('../controllers/specificCategoryDataController');
 
-
-route.get("/api/data", getAllTaskData);
 
 // get all category 
 route.get('/api/category', getAllCategory);
