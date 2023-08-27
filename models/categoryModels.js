@@ -8,6 +8,4 @@ const categorySchema = mongoose.Schema({
 
 const categoryModels = mongoose.model("category", categorySchema);
 
-//console.log(taskModels.collection.name);
-
 module.exports = categoryModels;
